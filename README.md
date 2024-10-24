@@ -1,5 +1,5 @@
 # EcoFlow
-EcoFlow open API code to get readings from the EcoFlow endpoint (for Europe this is https://api-e.ecoflow.com) via mqtt and write to Influx
+EcoFlow open API code to get readings for the PowerStream micro inverter from the EcoFlow endpoint (for Europe this is https://api-e.ecoflow.com) via mqtt and write to Influx
 
 Credit to Mark Hicks https://github.com/Mark-Hicks/ecoflow-api-examples for the code used to build this
 
