@@ -5,8 +5,10 @@ Credit to Mark Hicks https://github.com/Mark-Hicks/ecoflow-api-examples for the 
 
 https://developer-eu.ecoflow.com/us/document/powerStreamMicroInverter
 
-You'll need a developer account to get the keys, and to create a subfolder 'include' - create a file in that with the credentials.
+You'll need a developer account to get the keys.
+You also need to create a subfolder 'include' - create a file called mqtt_creds_config.py in that with the credentials (see sample file provided).
 
 MQTT updates every 2 seconds or so, as long as there is sufficient solar to power up the inverter.
 
-There are multiple temperature sensors in the device (see the http API values), but only espTempsensor is sent via MQTT (I assume this is an ESP32 - but in my experience this seems to match the others anyway).
+MQTT does not send all the sensor data (see the http API values); for instance there are multiple temperature sensors in the device, but only espTempsensor is sent via MQTT 
+(I assume this is an ESP32 - but in my experience the readings seem to match the others anyway)
