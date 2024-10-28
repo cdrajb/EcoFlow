@@ -50,6 +50,7 @@ class MqttClient:
         self.user = user
         self.pwd = pwd
         self.mqtt = mqtt.Client(name)
+        # for paho mqtt v2, this will fail; instead you can use mqtt.Client(mqtt.CallbackAPIVersion.VERSION1, name)
         self.resp = None
 
     def on_connect(self, client, userdata, flags, rc):
